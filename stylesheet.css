@@ -1,0 +1,27 @@
+:root{
+    --background: white;
+    --midground: grey;
+    --foreground: black;
+}
+*{
+    font-family: 'Forte', 'Forte Forward' ;
+    background-color: var(--background);
+    color: var(--midground);
+}
+.banner{
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+}
+.wheel{
+    width: 40%;
+    position: fixed;
+    right: 0vh;
+    display: none;
+}
+.content{
+    width: 100%;
+}
+.bottom{
+    width: 100%;
+}
