@@ -1,7 +1,7 @@
 const backgroundElement = document.querySelector('.background');
 const typingTextElement = document.getElementById('typing-text');
 
-const images = ['images/Top-Software-Developer-Skills-to-Learn-This-Year-for-Tech-Jobs-scaled.jpg', 'images/1696229244943.gif'];
+const images = ['images/Top-Software-Developer-Skills-to-Learn-This-Year-for-Tech-Jobs-scaled.jpg', 'images/1696229244943.gif','1695842119816.gif'];
 let currentImageIndex = 0;
 
 const texts = ['I am a Developer.', 'I am a Gamer.', 'I am an Artist.' ,'I am a Game dev.', 'I am an Ethical Hacker.'];
