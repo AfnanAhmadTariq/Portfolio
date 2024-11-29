@@ -55,8 +55,18 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+			'spin-reverse-slow': 'spin-reverse 30s linear infinite',
+		},
+		keyframes: {
+			'spin-reverse': {
+				'0%': { transform: 'rotate(0deg)' },
+				'100%': { transform: 'rotate(-360deg)' },
+			},
+		},
   	}
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

@@ -13,7 +13,7 @@ import {
 
 export default function Home() {
   const [currentRole, setCurrentRole] = useState('Software Engineer')
-  const roles = ['Software Engineer', 'UI/UX Designer', 'Web Developer', 'Problem Solver']
+  const roles = ['Software Engineer', 'UI/UX Designer', 'Web Developer', 'Problem Solver', 'Game Developer', 'Mobile Developer', 'AI Engineer']
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -58,33 +58,31 @@ export default function Home() {
       {/* Hero Section */}
       <section id="home" className="container mx-auto px-4 py-20 pt-32 relative">
         <div className="max-w-2xl mx-auto text-center relative">
-          <div className="w-32 h-32 mx-auto mb-6 relative">
-            <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-xl animate-pulse"></div>
+          <div className="w-64 h-64 mx-auto mb-6 relative">
+            <div className="absolute -mt-8 -ml-8 inset-0 w-80 h-80 bg-blue-500 rounded-full opacity-30 blur-xl animate-pulse"></div>
             <Image
-              src="/placeholder.svg"
+              src="/pic.jpg"
               alt="Avatar"
-              width={128}
-              height={128}
-              className="relative z-10 rounded-full transition-transform hover:scale-110 duration-300"
+              width={512}
+              height={512}
+              className="relative z-10 rounded-full border-4 border-blue-900"
             />
           </div>
           <h1 className="text-3xl font-bold mb-4 animate-fade-in-down">
-            Hello! I Am <span className="text-blue-400">Your Name</span>
+            Hello! I Am <span className="text-blue-400">Afnan Ahmad Tariq</span>
           </h1>
-          <p className="text-xl mb-2 animate-fade-in-up">A Designer who</p>
-          <p className="text-2xl mb-4 animate-fade-in-up">
-            Judges a book by its <span className="text-blue-400">cover</span>...
-          </p>
           <h2 className="text-3xl font-bold mb-4 animate-fade-in-up">
             I&apos;m a <span className="text-blue-400">{currentRole}</span>
           </h2>
           <p className="text-gray-400 animate-fade-in-up">
-            Currently, I&apos;m a Software Engineer at <span className="text-blue-400">Company</span>
+            Currently, I&apos;m a Software Engineering Student at <span className="text-blue-400">COMSATS University Islamabad</span>
           </p>
           <p className="text-gray-400 mt-4 max-w-xl mx-auto animate-fade-in-up">
-            A self-taught UI/UX designer functioning in the industry for 3+ years now.
-            I make meaningful and delightful digital products that create an equilibrium
-            between user needs and business goals.
+            I am a motivated software engineering student having skills in software development and
+            software deployment while also having interest in data science, AI, cloud technologies and
+            cyber security, and some basic experience in those fields. I also have interest in Japan and
+            its culture as there are many IT companies that dominates world wide such as Sony
+            Entertainment.
           </p>
         </div>
       </section>
@@ -113,7 +111,15 @@ export default function Home() {
         <div className="relative w-96 h-96 mx-auto">
           <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-6xl animate-float">A</span>
+            <span className="text-6xl animate-float">
+            <Image
+                  src="/a.svg"
+                  alt={`A`}
+                  width={60}
+                  height={95}
+                  className="rounded-lg"
+                />
+            </span>
           </div>
           <div className="absolute inset-0 animate-spin-slow">
             {[SiReact, SiNextdotjs, SiTailwindcss, SiTypescript, SiJavascript, SiHtml5, 
@@ -127,7 +133,7 @@ export default function Home() {
                   transform: 'translate(-50%, -50%)'
                 }}
               >
-                <Icon className="text-blue-400 w-6 h-6" />
+                <Icon className="text-blue-400 w-6 h-6 animate-spin-reverse-slow" />
               </div>
             ))}
           </div>
