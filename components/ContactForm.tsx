@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ContactForm from '@/components/ContactForm'
 import Navbar from '@/components/Navbar'
@@ -73,15 +71,15 @@ export default function Home() {
           <h1 className="text-3xl font-bold mb-4 animate-fade-in-down">
             Hello! I Am <span className="text-blue-400">Your Name</span>
           </h1>
-          <p className="text-xl mb-2 animate-fade-in-up">A Designer who</p>
+          <p className="text-xl mb-2 animate-fade-in-up">A Developer who</p>
           <p className="text-2xl mb-4 animate-fade-in-up">
-            Judges a book by its <span className="text-blue-400">cover</span>...
+            Grows together with his<span className="text-blue-400">Team</span>...
           </p>
           <h2 className="text-3xl font-bold mb-4 animate-fade-in-up">
-            I'm a <span className="text-blue-400">{currentRole}</span>
+            I&apos;m a <span className="text-blue-400">{currentRole}</span>
           </h2>
           <p className="text-gray-400 animate-fade-in-up">
-            Currently, I'm a Software Engineer at <span className="text-blue-400">Company</span>
+            Currently, I&apos;m a Software Engineer at <span className="text-blue-400">Company</span>
           </p>
           <p className="text-gray-400 mt-4 max-w-xl mx-auto animate-fade-in-up">
             A self-taught UI/UX designer functioning in the industry for 3+ years now.
@@ -109,9 +107,9 @@ export default function Home() {
       {/* Tech Stack */}
       <section className="container mx-auto px-4 py-20 text-center">
         <p className="text-xl mb-8 animate-fade-in-down">
-          I'm currently looking to join a <span className="text-blue-400">cross-functional</span> team
+          I&apos;m currently looking to join a <span className="text-blue-400">cross-functional</span> team
         </p>
-        <p className="text-gray-400 mb-12 animate-fade-in-up">that values improving people's lives through accessible design</p>
+        <p className="text-gray-400 mb-12 animate-fade-in-up">that values improving people&apos;s lives through accessible design</p>
         <div className="relative w-96 h-96 mx-auto">
           <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
