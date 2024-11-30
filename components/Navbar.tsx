@@ -39,10 +39,18 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center" onClick={toggleMobileMenu}>
             <span className="text-white text-2xl">&#9776;</span>
           </div>
+
+          {/* Desktop Navigation Links */}
+          <div className="hidden lg:flex gap-6">
+            <Link href="/#home" className="hover:text-blue-400 transition-colors">Home</Link>
+            <Link href="/#about" className="hover:text-blue-400 transition-colors">About</Link>
+            <Link href="/#projects" className="hover:text-blue-400 transition-colors">Projects</Link>
+            <Link href="/#contact" className="hover:text-blue-400 transition-colors">Contact</Link>
+          </div>
         </div>
       </div>
 
-      {/* Sidebar */}
+      {/* Sidebar for Mobile */}
       <div className={`fixed top-0 left-0 w-64 h-full bg-[#0D0B1F] text-white z-40 transform transition-all duration-300 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex justify-end p-4">
           <button onClick={toggleMobileMenu} className="text-white text-3xl">×</button>
