@@ -35,21 +35,26 @@ export default function Home() {
   const projects = [
     {
       title: 'Flutter App',
-      description: 'A cross-platform mobile application developed using Flutter framework. Features include real-time data synchronization, custom animations, and integration with RESTful APIs.'
+      description: 'A cross-platform mobile application developed using Flutter framework. Features include real-time data synchronization, custom animations, and integration with RESTful APIs.',
+      image: '/Whats-the-Difference-Between-UX-Design-vs.-UI-Design_@3x-1-scaled.jpg'  
     },
     {
       title: 'Tic Tac Ultimate',
-      description: 'An advanced version of the classic Tic-Tac-Toe game, built with React and featuring an unbeatable AI opponent using the minimax algorithm.'
+      description: 'An advanced version of the classic Tic-Tac-Toe game, built with React and featuring an unbeatable AI opponent using the minimax algorithm.',
+      image: '/1_JWStOGfx3DvZDDphuMNvgQ.jpg' 
     },
     {
       title: 'Catch Me',
-      description: 'An interactive web game developed with vanilla JavaScript, HTML5 Canvas, and CSS3. Demonstrates proficiency in game logic implementation and browser performance optimization.'
+      description: 'An interactive web game developed with vanilla JavaScript, HTML5 Canvas, and CSS3. Demonstrates proficiency in game logic implementation and browser performance optimization.',
+      image: '/catch-me-screenshot.jpg' 
     },
     {
       title: 'Weather Forecast',
-      description: 'A weather forecasting web application that integrates with multiple weather APIs. Built with Next.js and featuring server-side rendering for improved SEO and performance.'
+      description: 'A weather forecasting web application that integrates with multiple weather APIs. Built with Next.js and featuring server-side rendering for improved SEO and performance.',
+      image: '/weather-forecast-screenshot.jpg' 
     }
   ]
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0D0B1F] to-[#1A1830] text-white">
@@ -92,7 +97,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-8 animate-fade-in-down">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
-            <Card key={index} className="bg-[#1A1830] border-none transition-transform hover:scale-105 duration-300">
+            <Card key={index} className="bg-[#1A1830] border-none rounded-xl transition-transform hover:scale-105 duration-300">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
                 <p className="text-gray-400">{skill.description}</p>
@@ -151,13 +156,13 @@ export default function Home() {
                 <h4 className="text-xl font-bold mb-4 animate-fade-in-left">{project.title}</h4>
                 <p className="text-gray-400 mb-4 animate-fade-in-left">{project.description}</p>
               </div>
-              <div className="bg-[#1A1830] rounded-lg p-4 transition-transform hover:scale-105 duration-300">
+              <div className="bg-[#1A1830] rounded-3xl p-4 transition-transform hover:scale-105 duration-300">
                 <Image
-                  src="/placeholder.svg"
+                  src={project.image} 
                   alt={`${project.title} screenshot`}
-                  width={600}
+                  width={800}
                   height={400}
-                  className="rounded-lg"
+                  className="rounded-2xl"
                 />
               </div>
             </div>
