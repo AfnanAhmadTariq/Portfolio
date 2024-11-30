@@ -46,12 +46,12 @@ export default function Home() {
     {
       title: 'Catch Me',
       description: 'An interactive web game developed with vanilla JavaScript, HTML5 Canvas, and CSS3. Demonstrates proficiency in game logic implementation and browser performance optimization.',
-      image: '/catch-me-screenshot.jpg' 
+      image: '/1_JWStOGfx3DvZDDphuMNvgQ.jpg'
     },
     {
       title: 'Weather Forecast',
       description: 'A weather forecasting web application that integrates with multiple weather APIs. Built with Next.js and featuring server-side rendering for improved SEO and performance.',
-      image: '/weather-forecast-screenshot.jpg' 
+      image: '/1_JWStOGfx3DvZDDphuMNvgQ.jpg' 
     }
   ]
   
