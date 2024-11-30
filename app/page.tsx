@@ -63,8 +63,8 @@ export default function Home() {
       {/* Hero Section */}
       <section id="home" className="container mx-auto px-4 py-20 pt-32 relative">
         <div className="max-w-2xl mx-auto text-center relative">
-          <div className="w-64 h-64 mx-auto mb-6 relative">
-            <div className="absolute -mt-8 -ml-8 inset-0 w-80 h-80 bg-blue-500 rounded-full opacity-30 blur-xl animate-pulse"></div>
+          <div className="w-32 h-32 lg:w-64 lg:h-64 mx-auto mb-6 relative">
+            <div className="absolute -mt-2 -ml-2 lg:-mt-8 lg:-ml-8 inset-0 w-50 h-50 lg:w-80 lg:h-80 bg-blue-500 rounded-full opacity-30 blur-xl animate-pulse"></div>
             <Image
               src="/pic.jpg"
               alt="Avatar"
@@ -113,7 +113,7 @@ export default function Home() {
           I&apos;m currently looking to join a <span className="text-blue-400">cross-functional</span> team
         </p>
         <p className="text-gray-400 mb-12 animate-fade-in-up">that values improving people&apos;s lives through accessible design</p>
-        <div className="relative w-96 h-96 mx-auto">
+        <div className="relative w-64 h-64 lg:h-96 lg:w-96 mx-auto">
           <div className="absolute inset-0 bg-blue-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-6xl animate-float">
@@ -131,14 +131,14 @@ export default function Home() {
               SiCss3, SiFigma, SiAdobephotoshop, SiGit, SiGithub, SiVisualstudiocode].map((Icon, i) => (
               <div
                 key={i}
-                className="absolute w-10 h-10 bg-[#1A1830] rounded-full flex items-center justify-center"
+                className="absolute w-8 h-8 lg:w-10 lg:h-10 bg-[#1A1830] rounded-full flex items-center justify-center"
                 style={{
                   left: `${50 + 40 * Math.cos(2 * Math.PI * i / 12)}%`,
                   top: `${50 + 40 * Math.sin(2 * Math.PI * i / 12)}%`,
                   transform: 'translate(-50%, -50%)'
                 }}
               >
-                <Icon className="text-blue-400 w-6 h-6 animate-spin-reverse-slow" />
+                <Icon className="text-blue-400 w-4 h-4 lg:w-6 lg:h-6 animate-spin-reverse-slow" />
               </div>
             ))}
           </div>
