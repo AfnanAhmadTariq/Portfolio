@@ -24,8 +24,16 @@
   --ring: 224.3 76.3% 48%;
 }
 
-body {
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.main{
   padding: 0 5vw;
+}
+body {
   background: linear-gradient(to bottom right, #0D0B1F, #1A1830);
   color: white;
 }
@@ -126,13 +134,22 @@ body {
 }
 
 #contact{
-  margin-left: -5vw;
-  margin-right: -5vw;
-  width: 100vw;
+  width: 100%;
   padding: 5vw;
 }
 
 #navbar{
   padding-left: 4vw;
   padding-right: 4vw;
+}
+
+.animate-blink {
+  font-weight: 900;
+  animation: blink 0.8s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
