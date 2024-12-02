@@ -120,7 +120,7 @@ export default function Home() {
       title: 'Agen',
       description: 'Agen is an innovative app that automates the process of generating assignments by scraping relevant content from across the internet. Imagine a tool that can pull up-to-date information, organize it, and generate structured assignments in a matter of seconds. Whether you\'re a student, educator, or content creator, Agen will save you tons of time by doing the heavy lifting for you!',
       image: '/screenshots/agen.png', 
-      url: 'https://catchme-game.vercel.app/'
+      url: 'https://github.com/afnanahmadtariq/Agen/releases'
     },
     // {
     //   tech:'ReactJs | Bootstrap',
@@ -134,7 +134,7 @@ export default function Home() {
       title: 'Tic Tac Ultimate | Quixo',
       description: 'This project brings three iconic games into one seamless experience; Tic Tac Toe: The classic 3x3 grid. Ultimate Tic Tac Toe: A more complex version with 9 smaller grids, adding layers of strategy. Quixo: A fun variation with shifting tiles that adds a unique twist to traditional Tic Tac Toe!',
       image: '/screenshots/uttt.png',
-      url: 'https://catchme-game.vercel.app/'
+      url: 'https://github.com/afnanahmadtariq/Tic-Tac-Ultimate.git'
     },
     {
       tech:'Vanilla Js',
