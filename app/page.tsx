@@ -122,13 +122,13 @@ export default function Home() {
       image: '/screenshots/agen.png', 
       url: 'https://github.com/afnanahmadtariq/Agen/releases'
     },
-    // {
-    //   tech:'ReactJs | Bootstrap',
-    //   title: 'Weather Forecast',
-    //   description: 'A weather forecasting web application that integrates with multiple weather APIs. Built with Next.js and featuring server-side rendering for improved SEO and performance.',
-    //   image: '/screenshots/weather.png',
-    //   url: 'https://catchme-game.vercel.app/'
-    // },
+    {
+      tech:'ReactJs | Bootstrap',
+      title: 'Weather Forecast',
+      description: 'This Weather Forecast App provides users with real-time weather information based on geographic coordinates (latitude and longitude). Built with React and Bootstrap, the app features a clean, user-friendly interface where users can input location details and view weather forecasts for that area.',
+      image: '/screenshots/weather.png',
+      url: 'https://weather-forecast-ruddy-gamma.vercel.app/'
+    },
     {
       tech:'Java | JavaFX',
       title: 'Tic Tac Ultimate | Quixo',
