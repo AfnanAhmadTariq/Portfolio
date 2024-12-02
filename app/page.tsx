@@ -70,38 +70,76 @@ export default function Home() {
 
  
   const skills = [
-    { name: 'Frontend Development', description: 'Expertise in React, Next.js, and modern CSS frameworks' },
-    { name: 'UI/UX Design', description: 'Creating intuitive and visually appealing user interfaces' },
-    { name: 'Responsive Web Design', description: 'Ensuring seamless experiences across all devices' },
-    { name: 'Performance Optimization', description: 'Improving load times and overall site performance' }
-  ]
+    { 
+      name: 'Frontend Development', 
+      description: 'Expertise in React, Next.js, and modern CSS frameworks.', 
+      level: 'Advanced' 
+    },
+    { 
+      name: 'UI/UX Design', 
+      description: 'Creating intuitive and visually appealing user interfaces.', 
+      level: 'Intermediate' 
+    },
+    { 
+      name: 'Responsive Web Design', 
+      description: 'Ensuring seamless experiences across all devices.', 
+      level: 'Advanced' 
+    },
+    { 
+      name: 'Performance Optimization', 
+      description: 'Improving load times and overall site performance.', 
+      level: 'Beginner' 
+    },
+    { 
+      name: 'Backend Development', 
+      description: 'Experience with Node.js for building scalable server-side applications.', 
+      level: 'Intermediate' 
+    },
+    { 
+      name: 'Mobile Development', 
+      description: 'Skilled in Flutter for cross-platform mobile app development.', 
+      level: 'Intermediate' 
+    },
+    { 
+      name: 'Programming Languages', 
+      description: 'Proficiency in Java and Python for various software solutions.', 
+      level: 'Intermediate' 
+    },
+    { 
+      name: 'Prototyping and Design Tools', 
+      description: 'Familiarity with Figma for designing user-centric interfaces.', 
+      level: 'Intermediate' 
+    }
+  ];
+  
+  
 
   const projects = [
     {
       tech:'Flutter | Python',
-      title: 'Flutter App',
-      description: 'A cross-platform mobile application developed using Flutter framework. Features include real-time data synchronization, custom animations, and integration with RESTful APIs.',
-      image: '/Whats-the-Difference-Between-UX-Design-vs.-UI-Design_@3x-1-scaled.jpg', 
+      title: 'Agen',
+      description: 'Agen is an innovative app that automates the process of generating assignments by scraping relevant content from across the internet. Imagine a tool that can pull up-to-date information, organize it, and generate structured assignments in a matter of seconds. Whether you\'re a student, educator, or content creator, Agen will save you tons of time by doing the heavy lifting for you!',
+      image: '/screenshots/agen.png', 
       url: 'https://catchme-game.vercel.app/'
     },
-    {
-      tech:'API | JSON',
-      title: 'Weather Forecast',
-      description: 'A weather forecasting web application that integrates with multiple weather APIs. Built with Next.js and featuring server-side rendering for improved SEO and performance.',
-      image: '/1_JWStOGfx3DvZDDphuMNvgQ.jpg', 
-      url: 'https://catchme-game.vercel.app/'
-    },
+    // {
+    //   tech:'ReactJs | Bootstrap',
+    //   title: 'Weather Forecast',
+    //   description: 'A weather forecasting web application that integrates with multiple weather APIs. Built with Next.js and featuring server-side rendering for improved SEO and performance.',
+    //   image: '/screenshots/weather.png',
+    //   url: 'https://catchme-game.vercel.app/'
+    // },
     {
       tech:'Java | JavaFX',
       title: 'Tic Tac Ultimate | Quixo',
-      description: 'An advanced version of the classic Tic-Tac-Toe game, built with React and featuring an unbeatable AI opponent using the minimax algorithm.',
-      image: '/1_JWStOGfx3DvZDDphuMNvgQ.jpg', 
+      description: 'This project brings three iconic games into one seamless experience; Tic Tac Toe: The classic 3x3 grid. Ultimate Tic Tac Toe: A more complex version with 9 smaller grids, adding layers of strategy. Quixo: A fun variation with shifting tiles that adds a unique twist to traditional Tic Tac Toe!',
+      image: '/screenshots/uttt.png',
       url: 'https://catchme-game.vercel.app/'
     },
     {
       tech:'Vanilla Js',
       title: 'Catch Me',
-      description: 'An interactive web game developed with vanilla JavaScript, HTML5, and CSS3. Demonstrates proficiency in game logic implementation and browser performance optimization.',
+      description: 'Built entirely with Vanilla JavaScript, this simple yet fun game showcases the power of JavaScript in creating interactive experiences from scratch. Objective: Click on the moving icon to score points. Two Modes; Timed Mode: Rack up as many points as possible within a set time limit.Levels Mode: Icons move faster as you level up, challenging your reflexes!',
       image: '/screenshots/catch-me.png', 
       url: 'https://catchme-game.vercel.app/'
     }
@@ -122,7 +160,7 @@ export default function Home() {
                 alt="Avatar"
                 width={512}
                 height={512}
-                className="relative z-10 rounded-full border-4 border-blue-900"
+                className="relative z-10 rounded-full"
               />
             </div>
             <h1 className="text-xl lg:text-3xl font-bold mb-4 animate-fade-in-down">
@@ -136,11 +174,9 @@ export default function Home() {
               Currently, I&apos;m a Software Engineering Student at <span className="text-blue-400">COMSATS University Islamabad</span>
             </p>
             <p className="text-sm lg:text-base text-gray-400 mt-4 max-w-xl mx-auto animate-fade-in-up">
-              I am a motivated software engineering student having skills in software development and
-              software deployment while also having interest in data science, AI, cloud technologies and
-              cyber security, and some basic experience in those fields. I also have interest in Japan and
-              its culture as there are many IT companies that dominates world wide such as Sony
-              Entertainment.
+            I’m a passionate Software Engineer with a focus on creating scalable, secure, and intelligent 
+            applications. With hands-on experience in MERN, and Flutter. I build software that not only 
+            meets user needs but also integrates cutting-edge AI solutions to drive automation and innovation.
             </p>
           </div>
         </section>
@@ -150,15 +186,28 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-8 animate-fade-in-down">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {skills.map((skill, index) => (
-              <Card key={index} className="bg-[#1A1830] border-none rounded-xl transition-transform hover:scale-105 duration-300">
+              <Card 
+                key={index} 
+                className="bg-[#1A1830] border-none rounded-xl transition-transform hover:scale-105 duration-300"
+              >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
                   <p className="text-gray-400">{skill.description}</p>
+                  <p 
+                    className={
+                      skill.level === 'Beginner' ? 'text-red-500 font-bold' : 
+                      skill.level === 'Intermediate' ? 'text-yellow-500 font-bold' : 
+                      'text-green-500 font-bold'
+                    }
+                  >
+                    {skill.level}
+                  </p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </section>
+
 
         {/* Tech Stack */}
         <section className="container mx-auto px-4 py-20 text-center">
