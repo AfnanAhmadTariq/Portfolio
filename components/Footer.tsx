@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
-import ContactForm from './ContactForm';
+// import ContactForm from './ContactForm';
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <section className="container mx-auto px-4 py-20 bg-[#0D0B1F]">
             <h2 className="text-2xl text-white font-bold mb-8 animate-fade-in-down">Contact Me</h2>
             <div className="max-w-2xl mx-auto">
-            <ContactForm />
+            {/* <ContactForm /> */}
             </div>
         </section>
         <div className="container mx-auto px-4 md:px-10 lg:px-40">

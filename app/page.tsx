@@ -156,7 +156,7 @@ export default function Home() {
             <div className="w-32 h-32 lg:w-64 lg:h-64 mx-auto mb-6 relative">
               <div className="absolute -mt-2 -ml-2 lg:-mt-8 lg:-ml-8 inset-0 w-50 h-50 lg:w-80 lg:h-80 bg-blue-500 rounded-full opacity-30 blur-xl animate-pulse"></div>
               <Image
-                src="/pic.png"
+                src="/pic.jpg"
                 alt="Avatar"
                 width={512}
                 height={512}

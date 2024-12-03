@@ -18,12 +18,35 @@ export default function ContactForm() {
   }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Handle form submission logic here
-    console.log('Form submitted:', formData)
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' })
-  }
+    e.preventDefault();
+
+    try {
+      // Send form data to the Next.js API route
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      console.log('Form submitted:', result);
+      
+      if (response.ok) {
+        alert('Your message has been sent!');
+      } else {
+        alert('Something went wrong!');
+      }
+
+      // Reset form after submission
+      setFormData({ name: '', email: '', message: '' });
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error sending message');
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 animate-fade-in-up">
