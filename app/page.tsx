@@ -188,7 +188,7 @@ export default function Home() {
             {skills.map((skill, index) => (
               <Card 
                 key={index} 
-                className="bg-[#1A1830] border-none rounded-xl transition-transform hover:scale-105 duration-300"
+                className="bg-[#1A1830] border-none rounded-xl transition-transform duration-300 group md:hover:scale-105"
               >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
@@ -258,7 +258,7 @@ export default function Home() {
                     <h4 className="text-xl font-bold mb-4 animate-fade-in-left">{project.title}</h4>
                     <p className="text-gray-400 mb-4 animate-fade-in-left">{project.description}</p>
                   </div>
-                  <div className="bg-[#1A1830] rounded-3xl p-4 transition-transform cursor-pointer hover:scale-105 duration-300">
+                  <div className="bg-[#1A1830] rounded-3xl p-4 transition-transform cursor-pointer duration-300 group md:hover:scale-105 ">
                     <a href={project.url} target="_blank" rel="noopener noreferrer">
                       <Image
                         src={project.image} 

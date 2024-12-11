@@ -1,25 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
-import ContactForm from './ContactForm';
-
 const Footer: React.FC = () => {
   return (
     <footer  id="contact" className="bg-[#0D0B1F] text-white py-10 mt-20">
-        {/* Contact Form */}
-        <section className="container mx-auto px-4 py-20 bg-[#0D0B1F]">
-            <h2 className="text-2xl text-white font-bold mb-8 animate-fade-in-down">Contact Me</h2>
-            <div className="max-w-2xl mx-auto">
-            <ContactForm />
-            </div>
-        </section>
         <div className="container mx-auto px-4 md:px-10 lg:px-40">
             <div className="flex flex-col md:flex-row justify-between gap-8 mb-8">
                 <section className="flex-1 mb-6 md:mb-0">
                     <h2 className="text-lg md:text-xl font-semibold mb-4">Contact Information</h2>
                     <p>Email: 
-                        <a href="mailto:afnanahmadtariq@gmail.com" className="text-blue-400 hover:underline">
-                        afnanahmadtariq@gmail.com
+                        <a href="mailto:afnanahmadtariq@hotmail.com" className="text-blue-400 hover:underline">
+                        afnanahmadtariq@hotmail.com
                         </a>
                     </p>
                     <p>Phone: 
