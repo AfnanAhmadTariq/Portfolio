@@ -13,11 +13,6 @@ const Footer: React.FC = () => {
                         afnanahmadtariq@hotmail.com
                         </a>
                     </p>
-                    <p>Phone: 
-                        <a href="tel:+923369277332" className="text-blue-400 hover:underline">
-                        +923369277332
-                        </a>
-                    </p>
                 </section>
 
                 <section className="flex-1 md:pl-16">
